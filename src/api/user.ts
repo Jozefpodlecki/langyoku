@@ -30,8 +30,16 @@ export const getBasicUserInfo = () => new Promise<User>((resolve, reject) => {
     resolve(result as any);
 })
 
+const defaultProfile = {
+    language: {
+        id: null,
+        url: null,
+        name: ''
+    }
+}
+
 export const getProfile = () => new Promise<any>((resolve, reject) => {
-    const result = JSON.parse(localStorage.getItem('profile') || null);
+    const result = JSON.parse(localStorage.getItem('profile')) || defaultProfile;
 
     resolve(result);
 })
