@@ -12,7 +12,7 @@ module.exports = {
     },
     output: {
         path: __dirname,
-        publicPath: '/',
+        publicPath: '/langyoku/',
         filename: '[name].bundle.js'
     },
     resolve: {
