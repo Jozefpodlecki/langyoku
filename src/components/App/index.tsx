@@ -26,7 +26,7 @@ const Background = ({image}) => {
 
 const App: React.SFC<any> = () => {
     const [isAuthenticated, isLoading] = useAuth();
-    const image = require(`assets/images/holger-link-hD6avFQfPzw-unsplash.jpg`).default;
+    //const image = require(`assets/images/holger-link-hD6avFQfPzw-unsplash.jpg`).default;
     const [flags, setFlags] = useState([]);
     
     useEffect(() => {        

@@ -11,7 +11,7 @@ module.exports = {
         app: "./src/index.tsx"
     },
     output: {
-        path: path.resolve(__dirname, "build"),
+        path: __dirname,
         publicPath: '/',
         filename: '[name].bundle.js'
     },
@@ -37,6 +37,17 @@ module.exports = {
                 use: [
                     {
                         loader: 'file-loader',
+                        options: {
+                            outputPath: (url, resourcePath, context) => {
+                            
+                                if([/jpe?g/, /gif/, /png/].some(pr => pr.test(resourcePath))) {
+                                    return `images/${url}`;
+                                }
+                                if([/mp3/, /mp4/, /wav/].some(pr => pr.test(resourcePath))) {
+                                    return `media/${url}`;
+                                }
+                            }
+                        }
                     }
                 ]
             },
