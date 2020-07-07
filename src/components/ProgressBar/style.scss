@@ -1,0 +1,12 @@
+.bar {
+    background: white;
+    transition: width .3s ease-in;
+    height: inherit;
+    width: 0px;
+}
+
+.barShadow {
+    background: gray;
+    border: 1px solid white;
+    height: 25px;
+}

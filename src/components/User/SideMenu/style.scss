@@ -1,0 +1,15 @@
+.sidebar {
+    flex: 0 0 300px;
+    border: 1px solid white;
+}
+
+.menuItem {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding: 10px 10px 0 10px;
+
+    &__text {
+        margin-left: 10px;
+    }
+}

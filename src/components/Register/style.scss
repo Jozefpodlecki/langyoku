@@ -1,0 +1,59 @@
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    padding: 50px 100px;
+    background: #000000BB;
+    border-radius: 20px;
+}
+
+.title {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.field {
+    margin-top: 10px;
+}
+
+.input, .button {
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.input {
+    &:focus {
+        outline: none;
+    }
+
+    &::placeholder {
+        color: lightgray;
+    }
+}
+
+.button {
+    width: 100%;
+    cursor: pointer;
+    transition: color .3s, border-color .3s;
+
+    &:disabled {
+        color: lightgray;
+        border-color: lightgray;
+        cursor: none;
+        pointer-events: none;
+    }
+}
+
+.error {
+    padding-top: 10px;
+    color: red;
+}
+

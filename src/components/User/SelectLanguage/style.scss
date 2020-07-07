@@ -1,0 +1,44 @@
+.input {
+    padding: 10px;
+    width: 280px;
+}
+
+.popup {
+    background: black;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    display: none;
+    padding-top: 10px;
+
+    &--open {
+        opacity: 1;
+        display: grid;
+    }
+}
+
+.languages {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+}
+
+.language {
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.languageName {
+    padding: 10px 0;
+}
+
+.languageFlag {
+    flex: 1;
+
+    &:hover {
+        filter: brightness(.7);
+    }
+}

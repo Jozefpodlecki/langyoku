@@ -1,0 +1,14 @@
+.background {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    filter: brightness(0.7);
+    z-index: -1;
+}
+
+.flag {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,188 @@
+.container {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.topbar {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+    &__appName {
+        flex: 1 0 100%;
+        font-size: 40px;    
+    }
+
+    &__name {
+        padding: 10px;
+        font-size: 30px;
+        flex: 1;
+    }
+}
+
+.content {
+    flex: 1;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.loader {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    &__cardRevealed, &__cardHidden, &__complete {
+        transition: transform .3s ease-in;
+    }
+
+    &__cardHidden {
+        position: absolute;
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    &__cardRevealed {
+        position: absolute;
+        transform: rotateX(90deg);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__complete {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__completeHeader {
+        flex: 0 0 auto;
+        font-size: 30px;
+        padding: 0 20px;
+    }
+
+    &__completeContent {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__completeContentScore {
+        flex: 0 0 100%;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    // &__completeActions {
+    //     display: flex;
+    //     justify-content: center;
+    // }
+
+    // &__completeAction {
+    //     display: flex;
+    //     align-items: center;
+    //     padding: 10px;
+    //     border: 1px solid white;
+    //     margin: 0 10px;
+    //     cursor: pointer;
+    // }
+
+    &__completeActionText {
+        padding-left: 10px;
+    }
+
+    &__cardRevealedspeaker {
+        text-align: center;
+        flex: 1 0 100%;
+    }
+
+    &__strokesList {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__strokeImage {
+        width: 150px;
+        padding: 40px 20px;
+    }
+
+}
+
+.example {
+    padding-top: 10px;
+}
+
+.card {
+    
+   
+
+    &__text {
+        font-size: 200px;
+        // transform: rotateX(90deg);
+        
+    }
+
+    &__speaker {
+        cursor: pointer;
+    }
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+}
+
+.options {
+    flex: 1;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.option, .exit, .stat {
+    display: flex;
+    padding: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+
+    &--disabled {
+        color: gray;
+        border-color: gray;
+        cursor: none;
+        pointer-events: none;
+    }
+
+    &__text {
+        margin-left: 10px;
+    }
+}
+
+.stat {
+    font-weight: bold;
+
+    &__left {
+        margin-right: 10px;
+    }
+
+    &__right {
+        margin-left: 10px;
+    }
+}
+
+.option {
+    margin: 0 10px;
+}

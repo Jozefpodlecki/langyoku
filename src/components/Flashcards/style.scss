@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+}
+
+.flashcard {
+    padding: 10px;
+    border: 1px solid white;
+    flex: 0 0 100px;
+    height: 100px;
+    cursor: pointer;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

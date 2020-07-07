@@ -1,0 +1,58 @@
+.container {
+    height: inherit;
+    background: black;
+    color: white;
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.textWrapper {
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    transition: all .3s;
+    //color: gray;
+
+    &:hover {
+        color: gray;
+    }
+
+    &--selected {
+        color: gray;
+        border-color: gray;
+    }
+
+    
+
+    &--checked {
+        cursor: none;
+        pointer-events: none;
+    }
+}
+
+.text {
+    &--hidden {
+        visibility: hidden;
+    }   
+}
+
+.checkIcon {
+    position: absolute;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}

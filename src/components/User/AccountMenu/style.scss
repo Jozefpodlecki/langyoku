@@ -1,0 +1,28 @@
+.avatar {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+    &:hover {
+        border: 1px solid white;
+    }
+}
+
+.menu {
+    position: absolute;
+    display: none;
+    padding: 10px;
+    background: black;
+    margin-left: -150px;
+    width: 150px;
+
+    &__item {
+        cursor: pointer;
+        padding: 10px;
+        display: flex;
+    }
+
+    &--opened {
+        display: block;
+    }
+}

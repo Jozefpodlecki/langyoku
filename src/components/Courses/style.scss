@@ -1,0 +1,16 @@
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.course {
+    padding: 10px;
+    border: 1px solid white;
+    flex: 0 0 30%;
+    height: 50px;
+    cursor: pointer;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

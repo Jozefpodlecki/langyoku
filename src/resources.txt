@@ -1,0 +1,170 @@
+https://www.hantrainerpro.de/resources/pronunciations/do1ngxi.mp3
+
+gigaPlayHtml5('https://dictionary.writtenchinese.com/sounds/qian2yue1.mp3');
+
+/giffile.action?sfile=true&localfile=true&fileName=%25E7%25AD%25BE.gif
+
+
+gigaPlayHtml5('https://dictionary.writtenchinese.com/sounds/shang1dian4.mp3');
+
+https://dictionary.writtenchinese.com/giffile.action?sfile=true&localfile=true&fileName=%25E7%25AD%25BE.gif
+	<div class="symbol-layer">
+    <img class="stop hidden" id="staticGif0" src="/giffile.action?sfile=true&localfile=true&fileName=%25E7%25AD%25BE.gif" />
+    <img class="play" id="dynamicGif0" src="/giffile.action?&localfile=true&fileName=%25E7%25AD%25BE.gif" onerror="$('#id-gifmenu0').hide();$(this).hide();$('#staticGif0').hide();$('#id-gifword0').show();" />
+    <div id="id-gifword0" style="display: none; width: 168px;height: 168px;border: 1px solid #dfdfdf;font-size: 120px;text-align: center;line-height: 150px;">签</div>
+</div>
+
+function gigaPlayHtml5(src) {
+	var audio = document.createElement("audio"); 
+	
+	var index = 0;
+    audio.src = src;  
+    audio.addEventListener('ended', function () {}, false);  
+    audio.play();
+}
+
+https://dictionary.writtenchinese.com/ajaxsearch/simsearch.action
+searchKey=%E6%88%91%E4%BB%AC
+
+bothChLang: null
+bothChShort: [{definition: "we / us / ourselves / our", id: "4", jyutping: "ngo5 mun4", pinyin: "wo3 men5",…}]
+0: {definition: "we / us / ourselves / our", id: "4", jyutping: "ngo5 mun4", pinyin: "wo3 men5",…}
+definition: "we / us / ourselves / our"
+id: "4"
+jyutping: "ngo5  mun4"
+pinyin: "wo3 men5"
+pinyinsort: "women"
+sc: "我们"
+sound: "wo3men5"
+tabId: "3"
+tc: "我們"
+tone: "wǒ men"
+yale: "ngo5  mun4"
+bothEnLang: null
+
+https://dictionary.writtenchinese.com/ajaxsearch/simsearch.action
+searchKey=%E6%88%91
+searchKey: 我
+
+{bothChShort.id}/{bothChShort.tabId}/1
+
+bothChLang: null
+bothChShort: [{definition: "we / us / ourselves / our", id: "4", jyutping: "ngo5 mun4", pinyin: "wo3 men5",…}]
+0: {definition: "we / us / ourselves / our", id: "4", jyutping: "ngo5 mun4", pinyin: "wo3 men5",…}
+definition: "we / us / ourselves / our"
+id: "4"
+jyutping: "ngo5  mun4"
+pinyin: "wo3 men5"
+pinyinsort: "women"
+sc: "我们"
+sound: "wo3men5"
+tabId: "3"
+tc: "我們"
+tone: "wǒ men"
+yale: "ngo5  mun4"
+bothEnLang: null
+bothEnShort: null
+bothPinyinLang: null
+bothPinyinShort: null
+chs: null
+detailList: null
+detailpy: null
+isSubCh: false
+lang: null
+listDetail1: null
+masureWordsBeans: null
+mdbgCh: [{definition: "selflessness/altruism", id: "32657", jyutping: "mong4 ngo5", pinyin: "wang4 wo3",…},…]
+0: {definition: "selflessness/altruism", id: "32657", jyutping: "mong4 ngo5", pinyin: "wang4 wo3",…}
+definition: "selflessness/altruism"
+id: "32657"
+jyutping: "mong4  ngo5"
+pinyin: "wang4 wo3"
+pinyinsort: "wangwo"
+sc: "忘我"
+sound: "wang4wo3"
+tabId: "2"
+tc: "忘我"
+tone: "wàng wǒ"
+yale: "mong4  ngo5"
+1: {definition: "we", id: "34851", jyutping: "ngo5 jan4", pinyin: "wo3 ren2", pinyinsort: "woren",…}
+2: {definition: "our country/China", id: "34856", jyutping: "ngo5 gwok3", pinyin: "wo3 guo2",…}
+3: {definition: "our side/we", id: "34857", jyutping: "ngo5 fong1", pinyin: "wo3 fang1",…}
+4: {definition: "my / mine", id: "34858", jyutping: "ngo5 di1, dik1", pinyin: "wo3 de5",…}
+5: {definition: "we/us (archaic)", id: "34859", jyutping: "ngo5 dang2", pinyin: "wo3 deng3",…}
+6: {definition: "bosh!/crap!/see also 哇靠[wa1 kao4]", id: "34863", jyutping: "ngo5 kaau3",…}
+7: {definition: "one's former self/back on form", id: "40053", jyutping: "gu3 ngo5", pinyin: "gu4 wo3",…}
+8: {definition: "the enemy and us", id: "40494", jyutping: "dik6 ngo5", pinyin: "di2 wo3",…}
+9: {definition: "id/the self", id: "44222", jyutping: "bun2 ngo5", pinyin: "ben3 wo3",…}
+10: {definition: "anatta (Buddhist concept of "non-self")", id: "55560", jyutping: "mou4 ngo5",…}
+11: {definition: "self-/ego (psychology)", id: "72682", jyutping: "zi6 ngo5", pinyin: "zi4 wo3",…}
+12: {definition: "superego", id: "82741", jyutping: "ciu1 ngo5", pinyin: "chao1 wo3",…}
+13: {definition: "you and me / us / we", id: "215218", jyutping: "nei5 ngo5", pinyin: "ni3 wo3",…}
+14: {definition: "the collective / the whole / (Buddhism) the greater self", id: "217129",…}
+15: {definition: "the self / the individual", id: "217791", jyutping: "siu2 ngo5", pinyin: "xiao3 wo3",…}
+16: {definition: "(literary) we / us", id: "218814", jyutping: "ngo5 bui3", pinyin: "wo3 bei4",…}
+17: {definition: "in my opinion", id: "6019", jyutping: "ji1 ngo5 hon1, hon3", pinyin: "yi1 wo3 kan4",…}
+18: {definition: "forget-me-not, genus Myosotis (botany)", id: "12531", jyutping: "mat6 mong4 ngo5",…}
+19: {definition: "in my opinion / in my view", id: "19840", jyutping: "zoi6 ngo5 hon1, hon3",…}
+20: {definition: "our / ours", id: "34854", jyutping: "ngo5 mun4 di1, dik1", pinyin: "wo3 men5 de5",…}
+21: {definition: "myself / my own", id: "34860", jyutping: "ngo5 zi6 gei2", pinyin: "wo3 zi4 ji3",…}
+22: {definition: "in my view/in my opinion/from what I can see", id: "39276",…}
+23: {,…}
+24: {definition: "lit. you die, I live (idiom); irreconcilable adversaries/two parties cannot coexist",…}
+25: {,…}
+26: {definition: "friendly one-upmanship/to try to emulate", id: "5708",…}
+27: {definition: "as I see it/in my opinion", id: "6018", jyutping: "ji1 ngo5 loi4 hon1, hon3",…}
+28: {definition: "to continue in one's own way (idiom); to ignore advice/to persist whatever others say",…}
+29: {,…}
+30: {,…}
+31: {definition: "as far as I'm concerned", id: "27217", jyutping: "deoi3 ngo5 loi4 syut3",…}
+32: {definition: "ourselves", id: "34855", jyutping: "ngo5 mun4 zi6 gei2", pinyin: "wo3 men5 zi4 ji3",…}
+33: {definition: "to continue in one's own way (idiom); to ignore advice/to persist whatever others say",…}
+34: {,…}
+35: {definition: "contradictions between ourselves and the enemy/Either you are for us or against us.",…}
+36: {definition: "Time and tide wait for no man (idiom)", id: "48299",…}
+37: {,…}
+38: {definition: "self-introduction/to introduce oneself", id: "72683", jyutping: "zi6 ngo5 gaai3 siu6",…}
+39: {definition: "self-hypnotism", id: "72684", jyutping: "zi6 ngo5 ceoi1 min4",…}
+40: {definition: "to comfort oneself/to console oneself/to reassure oneself", id: "72685",…}
+41: {definition: "self-actualization (psychology) / self-realization", id: "72686",…}
+42: {definition: "self-criticism", id: "72687", jyutping: "zi6 ngo5 pai1 ping4",…}
+43: {definition: "(my, your) own person/(to assert) one's own personality", id: "72688",…}
+44: {definition: "self-esteem", id: "72689", jyutping: "zi6 ngo5 ping4 gaai3",…}
+45: {definition: "self-defense", id: "72690", jyutping: "zi6 ngo5 fong4 wai6",…}
+46: {definition: "haughty and arrogant", id: "81651", jyutping: "gung3 gou1 ngo5 maan6",…}
+47: {definition: "self-awareness", id: "103083", jyutping: "zi6 ngo5 ji3 sik1",…}
+48: {definition: "to both be willing / mutual consent", id: "215217", jyutping: "nei5 cing4 ngo5 jyun6",…}
+49: {definition: "(slang) shoot! / crap!", id: "218813", jyutping: "ngo5 laak6, lak6 go3 heoi2, heoi3",…}
+mdbgEn: null
+mdbgPinyin: null
+myGroupBeans: null
+pageNumber: null
+pinyin: null
+searchKey: "我"
+searchKeySplitEncode: null
+searchType: 3
+searchkeyEncode: null
+seoBean: null
+signCh: [{definition: "I / me / my", id: "70", jyutping: "ngo5", pinyin: "wo3", pinyinsort: "wo", sc: "我",…}]
+0: {definition: "I / me / my", id: "70", jyutping: "ngo5", pinyin: "wo3", pinyinsort: "wo", sc: "我",…}
+definition: "I / me / my"
+id: "70"
+jyutping: "ngo5"
+pinyin: "wo3"
+pinyinsort: "wo"
+sc: "我"
+sound: "wo3"
+tabId: "1"
+tc: "我"
+tone: "wǒ"
+yale: "ngo5"
+signEnLang: null
+signEnShort: null
+signPinyinLang: null
+signPinyinShort: null
+signcharTop7Bigram: null
+singlepy: null
+tid: null
+type: 0
+useIsOwnCreateCardCardFlag: false
+wid: null

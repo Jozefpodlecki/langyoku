@@ -1,0 +1,10 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #000000BB;
+    
+    &__socialLink {
+        padding: 10px;
+    }
+}
