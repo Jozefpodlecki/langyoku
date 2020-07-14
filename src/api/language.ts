@@ -45,7 +45,7 @@ export const getLanguages = (criteria: any) => new Promise<any[]>((resolve, reje
         {
             id: 7,
             name: "Italian",
-            url: require('assets/flags/at.png').default
+            url: require('assets/flags/it.png').default
         },
         {
             id: 8,

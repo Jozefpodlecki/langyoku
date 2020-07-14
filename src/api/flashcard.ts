@@ -1,3 +1,5 @@
+import Flashcards from "components/Flashcards";
+
 export const getFlashcard = (id: number) => Promise.resolve({
     name: 'HSK 1',
     cards: [
@@ -173,35 +175,42 @@ export const getFlashcard = (id: number) => Promise.resolve({
     }
 ]});
 
-export const getFlashcards = () => Promise.resolve([
-    {
-        id: 1,
-        name: 'HSK 1',
-        languageName: 'chinese'
-    },
-    {
-        id: 2,
-        name: 'HSK 2',
-        languageName: 'chinese'
-    },
-    {
-        id: 3,
-        name: 'HSK 3',
-        languageName: 'chinese'
-    },
-    {
-        id: 4,
-        name: 'HSK 4',
-        languageName: 'chinese'
-    },
-    {
-        id: 5,
-        name: 'HSK 5',
-        languageName: 'chinese'
-    },
-    {
-        id: 6,
-        name: 'HSK 6',
-        languageName: 'chinese'
-    }
-])
+export const getFlashcards = (criteria: any) => new Promise<any[]>((resolve, reject) => {
+    
+    const allFlashcards = [
+        {
+            id: 1,
+            name: 'HSK 1',
+            languageId: 2
+        },
+        {
+            id: 2,
+            name: 'HSK 2',
+            languageId: 2
+        },
+        {
+            id: 3,
+            name: 'HSK 3',
+            languageId: 2
+        },
+        {
+            id: 4,
+            name: 'HSK 4',
+            languageId: 2
+        },
+        {
+            id: 5,
+            name: 'HSK 5',
+            languageId: 2
+        },
+        {
+            id: 6,
+            name: 'HSK 6',
+            languageId: 2
+        }
+    ];
+
+    const flashcards = allFlashcards.filter(pr => criteria.languageId === pr.languageId);
+
+    resolve(flashcards);
+})

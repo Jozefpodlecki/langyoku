@@ -6,7 +6,7 @@ import Courses from 'components/Courses';
 import Games from 'components/Games';
 import SignIn from 'components/SignIn';
 import style from './style.scss'
-import { getToken } from 'api';
+import { getToken, getProfile, getLanguageBackground } from 'api';
 import { PrivateRoute } from 'PrivateRoute';
 import { useAuth } from 'AuthContext';
 import User from 'components/User';
@@ -17,19 +17,41 @@ import MemoryGame from 'components/MemoryGame';
 import Register from 'components/Register';
 import FlagsBackground from 'components/FlagsBackground';
 import { getFlags } from 'data/flags';
+import { useProfile } from 'ProfileContext';
 
-const Background = ({image}) => {
-    return <div style={{
-        background: `url(${image}) center center / cover no-repeat`,
-    }} className={style.background}></div>
+const Background = ({isImageLoading, image}) => {
+    return <div className={style.background}>
+        <div style={{
+            width: 'inherit',
+            height: 'inherit',
+            transition: 'all .3s ease-in',
+            opacity: isImageLoading ? 0 : 1,
+            background: `url(${image}) center center / cover no-repeat`,
+        }}></div>
+    </div>
 }
 
 const App: React.SFC<any> = () => {
     const [isAuthenticated, isLoading] = useAuth();
-    //const image = require(`assets/images/holger-link-hD6avFQfPzw-unsplash.jpg`).default;
     const [flags, setFlags] = useState([]);
+    const [image, setImage] = useState('');
+    const [isImageLoading, setImageLoading] = useState(true);
+    const [profile] = useProfile();
     
-    useEffect(() => {        
+    useEffect(() => {
+        if(isAuthenticated) {
+            getLanguageBackground()
+                .then(image => {
+                    setImage(image.background);
+                    fetch(image.background)
+                        .then(pr => {
+                            setImageLoading(false);
+                        })
+                })
+        }
+    }, [profile, isAuthenticated]);
+
+    useEffect(() => {
         getFlags()
             .then(flags => {
                 setFlags(flags.slice(0, 25))
@@ -37,8 +59,7 @@ const App: React.SFC<any> = () => {
     }, [])
 
     return <div className={style.layout}>
-        {/* <Background image={image}/> */}
-        <FlagsBackground flags={flags}/>
+        {isAuthenticated ? <Background isImageLoading={isImageLoading} image={image}/> : <FlagsBackground flags={flags}/>}
         {isLoading ?
             <Loader
                 className={style.loader}

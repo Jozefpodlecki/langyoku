@@ -7,6 +7,7 @@ import { faCubes, faGamepad, faComments, faBookOpen, faStickyNote } from "@forta
 import { randomBoolean, randomItemFromArray, shuffle } from "utils";
 import { dictionary } from "data";
 import { faTwitter, faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { resolve } from "path";
 export * from './auth'
 export * from './course'
 export * from './flashcard'
@@ -102,6 +103,63 @@ export const getLinks = () => Promise.resolve([
     }
 ])
 
+const themesContext = require.context('../assets/themes/', true, /\.(jpg|png)$/)
+export const getLanguageBackground = () => new Promise<any>((resolve, reject) => {
+
+    const result = JSON.parse(localStorage.getItem('profile') || null);
+
+    const map = [
+        {
+            id: 1,
+            background: themesContext("./spain_background.jpg").default
+        },
+        {
+            id: 2,
+            background: themesContext("./china_background.jpg").default
+        },
+        {
+            id: 3,
+            background: themesContext("./portugal_background.jpg").default
+        },
+        {
+            id: 4,
+            background: themesContext("./japan_background.jpg").default
+        },
+        {
+            id: 5,
+            background: themesContext("./korea_background.jpg").default
+        },
+        {
+            id: 6,
+            background: themesContext("./german_background.jpg").default
+        },
+        {
+            id: 7,
+            background: themesContext("./italy_background.jpg").default
+        },
+        {
+            id: 8,
+            background: themesContext("./greece_background.jpg").default
+        },
+        {
+            id: 9,
+            background: themesContext("./dutch_background.jpg").default
+        },
+        {
+            id: 10,
+            background: themesContext("./french_background.jpg").default
+        },
+        {
+            id: 11,
+            background: themesContext("./turkey_background.jpg").default
+        }
+    ]
+
+    const item = map.find(pr => pr.id === result.language.id);
+
+    resolve(item);
+})
+
 export const getMenuItems = () => Promise.resolve([
     {
         id: 1,
@@ -141,7 +199,7 @@ export const getMenuItems = () => Promise.resolve([
 ])
 
 
-const context = require.context('../assets/images/', true, /\.(jpg|png)$/)
+const imagesContext = require.context('../assets/images/', true, /\.(jpg|png)$/)
 export const getMatches = ({language}) => new Promise<any[]>((resolve, reject) => {
 
     let result = [];
@@ -161,7 +219,7 @@ export const getMatches = ({language}) => new Promise<any[]>((resolve, reject) =
 
         if(rollImage && item.images) {
             let value = randomItemFromArray(item.images);
-            value = context(value).default;
+            value = imagesContext(value).default;
 
             match2 = {
                 id: id++,
