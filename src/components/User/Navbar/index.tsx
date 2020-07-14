@@ -6,26 +6,17 @@ import AccountMenu from "components/User/AccountMenu"
 import style from './style.scss'
 import { appName } from "constant"
 import { getLanguages, saveProfile, getProfile } from "api"
+import { useProfile } from "ProfileContext"
 
 const Navbar = () => {
     const [canEdit, setEdit] = useState(false);
     const editRef = useRef<HTMLDivElement>(null);
     const [isLoading, setLoading] = useState(true);
     const [languages, setLanguages] = useState([]);
-    const [profile, setProfile] = useState({
-        language: {
-            id: null,
-            url: null,
-            name: ''
-        }
-    })
+    const [profile, setProfile] = useProfile()
     
     useEffect(() => {
-        getProfile()
-            .then(profile => {
-                setProfile(profile);
-            })
-
+        
         getLanguages({
             name: '',
             pageSize: 9
@@ -51,9 +42,10 @@ const Navbar = () => {
     const onSelect = (language: any) => {
         saveProfile({language})
             .then(pr => {
-                setProfile({
+                setProfile(profile => ({
+                    ...profile,
                     language
-                });
+                }));
                 setEdit(false);
             })
     }

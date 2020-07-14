@@ -1,50 +1,72 @@
-export const getCourses = () => Promise.resolve([
-    {
-        id: 1,
-        name: 'Personal Pronouns',
-        languageName: 'chinese'
-    },
-    {
-        id: 2,
-        name: 'Possessive Pronouns',
-        languageName: 'chinese'
-    },
-    {
-        id: 3,
-        name: 'Verbs',
-        languageName: 'chinese'
-    },
-    {
-        id: 4,
-        name: 'Adjectives',
-        languageName: 'chinese'
-    },
-    {
-        id: 5,
-        name: 'Adverbs',
-        languageName: 'chinese'
-    },
-    {
-        id: 6,
-        name: 'Colors',
-        languageName: 'chinese'
-    },
-    {
-        id: 7,
-        name: 'Numbers',
-        languageName: 'chinese'
-    }, 
-    {
-        id: 8,
-        name: 'Food',
-        languageName: 'chinese'
-    },
-    {
-        id: 9,
-        name: 'Frame of mind',
-        languageName: 'chinese'
-    }
-])
+export const getCourses = (criteria: any) => new Promise<any[]>((resolve, reject) => {
+
+    const allCourses = [
+        {
+            id: 1,
+            name: 'Personal Pronouns',
+            languageId: 2
+        },
+        {
+            id: 2,
+            name: 'Possessive Pronouns',
+            languageId: 2
+        },
+        {
+            id: 3,
+            name: 'Verbs',
+            languageId: 2
+        },
+        {
+            id: 4,
+            name: 'Adjectives',
+            languageId: 2
+        },
+        {
+            id: 5,
+            name: 'Adverbs',
+            languageId: 2
+        },
+        {
+            id: 6,
+            name: 'Colors',
+            languageId: 2
+        },
+        {
+            id: 7,
+            name: 'Numbers',
+            languageId: 2
+        }, 
+        {
+            id: 8,
+            name: 'Food',
+            languageId: 2
+        },
+        {
+            id: 9,
+            name: 'Frame of mind',
+            languageId: 2
+        },
+        {
+            id: 10,
+            name: 'Personal Pronouns',
+            languageId: 1
+        },
+        {
+            id: 11,
+            name: 'Verbs',
+            languageId: 1
+        },
+        {
+            id: 12,
+            name: 'Colors',
+            languageId: 1
+        },
+    ]
+
+    const courses = allCourses.filter(pr => pr.languageId === criteria.languageId);
+
+    resolve(courses);
+})
 
 export const getCourse = (id: number) => Promise.resolve([
     {
